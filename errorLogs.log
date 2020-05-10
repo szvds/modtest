@@ -1,0 +1,100 @@
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<mutes() done, defined at c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py:65> exception=ServerSelectionTimeoutError('connection closed,connection closed,connection closed')>
+Traceback (most recent call last):
+  File "c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py", line 69, in mutes
+    for member in result:
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1087, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1558, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1511, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1544, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 432, in get_server_session
+    None)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: connection closed,connection closed,connection closed
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<mutes() done, defined at c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py:65> exception=ServerSelectionTimeoutError('connection closed,connection closed,connection closed')>
+Traceback (most recent call last):
+  File "c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py", line 69, in mutes
+    for member in result:
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1087, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1558, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1511, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1544, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 432, in get_server_session
+    None)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: connection closed,connection closed,connection closed
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<mutes() done, defined at c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py:65> exception=ServerSelectionTimeoutError('connection closed,connection closed,connection closed')>
+Traceback (most recent call last):
+  File "c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py", line 69, in mutes
+    for member in result:
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1087, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1558, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1511, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1544, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 432, in get_server_session
+    None)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: connection closed,connection closed,connection closed
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<status() done, defined at c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py:53> exception=ConnectionClosed('WebSocket connection is closed: code = 1000 (OK), no reason')>
+Traceback (most recent call last):
+  File "c:/Users/jacqu/OneDrive/Desktop/Iris bot/bot.py", line 60, in status
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"over {len(bot.channels)} channels"))
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\client.py", line 848, in change_presence
+    await self.ws.change_presence(activity=activity, status=status, afk=afk)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\gateway.py", line 485, in change_presence
+    await self.send(sent)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\gateway.py", line 455, in send
+    await super().send(data)
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\websockets\protocol.py", line 361, in send
+    yield from self.ensure_open()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\websockets\protocol.py", line 512, in ensure_open
+    self.close_code, self.close_reason) from self.transfer_data_exc
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+ERROR:discord.client:Attempting a reconnect in 1.29s
+Traceback (most recent call last):
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\gateway.py", line 443, in poll_event
+    msg = await self.recv()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\websockets\protocol.py", line 350, in recv
+    yield from self.ensure_open()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\websockets\protocol.py", line 501, in ensure_open
+    self.close_code, self.close_reason) from self.transfer_data_exc
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\client.py", line 407, in connect
+    await self._connect()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\client.py", line 370, in _connect
+    await self.ws.poll_event()
+  File "C:\Users\jacqu\AppData\Local\Programs\Python\Python37\lib\site-packages\discord\gateway.py", line 451, in poll_event
+    raise ConnectionClosed(e, shard_id=self.shard_id) from e
+discord.errors.ConnectionClosed: WebSocket connection is closed: code = 1000 (OK), no reason
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000165CD36D080>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000165CCA37B38>
